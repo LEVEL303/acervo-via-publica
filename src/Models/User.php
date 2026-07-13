@@ -3,7 +3,7 @@
 namespace src\Models;
 
 use PDO;
-use Config\Database;
+use config\Database;
 
 class User {
     private int $id;
