@@ -1,0 +1,16 @@
+{
+    "name": "avp/acervo-via-publica",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/",
+            "Config\\": "config/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Levitico Rimon",
+            "email": "leviticorimon@gmail.com"
+        }
+    ],
+    "require": {}
+}

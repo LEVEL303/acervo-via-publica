@@ -21,13 +21,19 @@ switch ($route) {
         $controller = new AuthController();
         $controller->login();
         break;
+    
+    case 'logout':
+        $controller = new AuthController();
+        $controller->logout();
+        break;
 
     case 'admin/dashboard':
         if (!isset($_SESSION['admin_id'])) {
             header('Location: ?route=login');
             exit;
         }
-        echo "Bem vindo, " . htmlspecialchars($_SESSION['admin_name']) ."!";
+        
+        require_once __DIR__ . '/../src/Views/admin/dashboard.php';
         break;
 
     case 'home':
