@@ -5,12 +5,8 @@ namespace src\Models;
 use PDO;
 use config\Database;
 
-class User {
-    private int $id;
-    private string $name;
-    private string $email;
-    private string $password;
-
+class User 
+{
     public static function findByEmail(string $email): array|false
     {
         $db = Database::getConnection();

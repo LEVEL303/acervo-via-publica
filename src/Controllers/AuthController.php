@@ -4,8 +4,8 @@ namespace src\Controllers;
 
 use src\Models\User;
 
-class AuthController {
-
+class AuthController 
+{
     public function login(): void
     {
         if (isset($_SESSION['admin_id'])) {
