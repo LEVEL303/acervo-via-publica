@@ -4,7 +4,7 @@ namespace src\Controllers;
 
 use src\Models\User;
 
-class AuthController 
+class AuthController extends Controller
 {
     public function login(): void
     {

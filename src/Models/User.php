@@ -14,9 +14,7 @@ class User
         $query = "SELECT * FROM users WHERE email = :email LIMIT 1";
 
         $stmt = $db->prepare($query);
-
         $stmt->bindValue(':email', $email, PDO::PARAM_STR);
-
         $stmt->execute();
 
         return $stmt->fetch();
